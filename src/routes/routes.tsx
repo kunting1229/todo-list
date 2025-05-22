@@ -5,19 +5,19 @@ import TodoPage from "../pages/TodoPage";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/todo-list/",
     element: <RootLayout />,
     children: [
       {
-        index: true,
+        path: "/todo-list/",
         element: <TodoPage filter="all" />,
       },
       {
-        path: "active",
+        path: "/todo-list/active",
         element: <TodoPage filter="active" />,
       },
       {
-        path: "completed",
+        path: "/todo-list/completed",
         element: <TodoPage filter="completed" />,
       },
     ],

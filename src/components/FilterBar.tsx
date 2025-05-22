@@ -9,7 +9,7 @@ export default function FilterBar() {
         <h1 className="text-2xl font-bold">Todo List</h1>
       </header>
       <div className="flex gap-4">
-        <NavLink to="/" end>
+        <NavLink to="/todo-list/" end>
           {({ isActive }) => (
             <Button
               variant="outline"
@@ -22,7 +22,7 @@ export default function FilterBar() {
             </Button>
           )}
         </NavLink>
-        <NavLink to="/active">
+        <NavLink to="/todo-list/active">
           {({ isActive }) => (
             <Button
               variant="outline"
@@ -35,7 +35,7 @@ export default function FilterBar() {
             </Button>
           )}
         </NavLink>
-        <NavLink to="/completed">
+        <NavLink to="/todo-list/completed">
           {({ isActive }) => (
             <Button
               variant="outline"

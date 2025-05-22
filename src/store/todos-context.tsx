@@ -11,10 +11,10 @@ type TodoContextType = {
 
 export const TodoContext = createContext<TodoContextType>({
   items: [],
-  addTodo: (text: string) => {},
-  removeTodo: (id: string) => {},
-  toggleTodo: (id: string) => {},
-  editTodo: (id: string, updatedTodo: Todo) => {},
+  addTodo: () => {},
+  removeTodo: () => {},
+  toggleTodo: () => {},
+  editTodo: () => {},
 });
 
 function TodoContextProvider({ children }: { children: React.ReactNode }) {
